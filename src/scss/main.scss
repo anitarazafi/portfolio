@@ -1,0 +1,22 @@
+$primary: #5349B1;
+$secondary: #23912D;
+$tertiary: #3F84A1;
+
+$primary-light: #CBC8E8;
+$primary-dark: #3A337C;
+
+$secondary-light: #BDDEC0;
+$secondary-dark: #19661F;
+
+$tertiary-light: #B5DAEA;
+$tertiary-dark: #23414E;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.section--hero {
+    background: linear-gradient(293.5deg, rgba(163, 156, 230, 0.5) 19.35%, rgba(255, 255, 255, 0) 102.26%);
+
+    &>div {
+        min-height: calc(100vh - 90px);
+    }
+}

@@ -117,23 +117,21 @@
     <!-- Navbar end -->
 
     <!-- Header start -->
-    <header class="container-fluid section--hero">
-      <div class="row align-items-center py-5 py-lg-0 px-md-5">
+    <header class="container-fluid section--hero position-relative px-0">
+      <div
+        class="row align-items-center justify-content-center py-5 py-lg-0 px-md-5"
+      >
         <div
-          class="col-12 order-1 order-lg-0 col-lg-6 d-flex flex-column align-items-center align-items-lg-start"
+          class="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start"
         >
           <div class="p-3">
-            <h1
-              class="text-primary d-flex justify-content-center justify-content-lg-start"
-            >
+            <h1 class="text-primary text-center text-lg-start">
               Hi, I am Anita
             </h1>
-            <p
-              class="lead text-secondary d-flex justify-content-center justify-content-lg-start"
-            >
+            <p class="lead fs-1 text-secondary text-center text-lg-start">
               I am a web designer and developer
             </p>
-            <p class="text-center text-lg-start">
+            <p class="text-center text-lg-start fs-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur reiciendis placeat corporis itaque eaque quos dolorem
               ratione suscipit, hic ipsam tempora officia dolorum nesciunt vel
@@ -141,26 +139,61 @@
             </p>
           </div>
           <div class="d-flex flex-column flex-lg-row p-3">
-            <button
+            <a
+              href="#"
               type="button"
-              class="btn btn-outline-secondary btn-lg mb-3 me-lg-5"
+              class="btn btn-outline-secondary btn-lg me-lg-5 mb-2 mb-lg-0"
             >
               View my works
-            </button>
-            <button
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                width="20px"
+                heigth="20px"
+                stroke="currentColor"
+                fill="currentColor"
+              >
+                <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="#"
               type="button"
-              class="btn btn-primary rounded-pill btn-lg mb-3 ms-lg-5"
+              class="btn btn-primary rounded-pill btn-lg ms-lg-5 mb-2 mb-lg-0"
             >
               Hire me
-            </button>
+            </a>
           </div>
         </div>
         <div
-          class="col-12 order-0 order-lg-1 col-lg-6 d-flex align-items-center justify-content-center"
+          class="d-none col-lg-6 d-lg-flex align-items-center justify-content-center"
         >
-          <img src="img/avatar.png" alt="" class="img-fluid" />
+          <img src="img/photo.png" alt="" class="img-fluid" />
         </div>
       </div>
+      <svg
+        id="Layer_1"
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 40.27"
+        class="position-absolute bottom--2"
+      >
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #fff;
+            }
+          </style>
+        </defs>
+        <path
+          class="cls-1"
+          d="M0,6.8V40H1440V0c-27.85-.22-77.09-.48-138.48,0C1256,.36,1086.33,2,765.15,17.41c-119,5.69-124.23,6.82-177.25,8.14C458.61,28.75,359,25.24,269.7,22,199.25,19.36,107.61,14.92,0,6.8Z"
+          transform="translate(0 0.27)"
+        />
+      </svg>
     </header>
     <!-- Header end -->
 
@@ -655,9 +688,23 @@
             </div>
           </div>
         </div>
+        <button
+          type="button"
+          class="btn btn-outline-secondary btn-lg rounded-pill"
+        >
+          See all posts
+        </button>
       </div>
     </section>
     <!-- Blog end -->
+
+    <!-- Footer start -->
+    <footer class="footer py-2">
+      <p class="text-center text-white m-0">
+        Copyright 2023 © Anita RAZAFI. All rights reserved.
+      </p>
+    </footer>
+    <!-- Footer end -->
 
     <script type="module" src="js/main.js"></script>
   </body>

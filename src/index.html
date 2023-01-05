@@ -4,18 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anita Razafindrakotovao</title>
-    <!-- TODO: CHANGE FAVICON -->
-    <link rel="shortcut icon" href="img/logo.png" />
+    <meta
+      name="description"
+      content="A clean and minimalist portfolio website with bootstrap."
+    />
+    <meta name="author" content="Anita Razafindrakotovao" />
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="img/favicon-bg.png" />
   </head>
   <body>
     <!-- Navbar start -->
-    <div class="container-fluid sticky-top bg-white shadow-sm">
+    <header class="container-fluid sticky-top bg-white shadow-sm">
       <div class="container">
         <nav class="navbar navbar-expand-lg bg-white">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-              <img src="img/logo.png" alt="logo" height="70px" />
+            <a class="navbar-brand text-primary fw-bold fs-3" href="index.html">
+              <!-- <img src="img/logo.png" alt="logo" height="70px" /> -->
+              My logo
             </a>
             <button
               class="navbar-toggler"
@@ -32,25 +37,26 @@
               class="collapse navbar-collapse d-lg-flex justify-content-end"
               id="navbarSupportedContent"
             >
-              <ul class="navbar-nav me-auto me-lg-0 mb-2 mb-lg-0">
+              <ul
+                class="navbar-nav me-auto me-lg-0 mb-2 mb-lg-0 align-items-center"
+              >
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="about.html"
+                    >About</a
                   >
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
 
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
+                    href="#services"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -58,18 +64,20 @@
                     Services
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Service 1</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Service 2</a>
+                      <a class="dropdown-item" href="#services">Service 1</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Service 3</a>
+                      <a class="dropdown-item" href="#services">Service 2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#services">Service 3</a>
                     </li>
                   </ul>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
+                  <a class="nav-link" href="#blog">Blog</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -94,7 +102,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="#contact">
                     <button type="button" class="btn btn-primary rounded-pill">
                       Hire me
                     </button>
@@ -104,7 +112,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">
                     <button type="button" class="btn btn-outline-secondary">
-                      Full resume
+                      My complete CV
                     </button>
                   </a>
                 </li>
@@ -113,11 +121,11 @@
           </div>
         </nav>
       </div>
-    </div>
+    </header>
     <!-- Navbar end -->
 
-    <!-- Header start -->
-    <header class="container-fluid section--hero position-relative px-0">
+    <!-- Hero section start -->
+    <section class="container-fluid section--hero position-relative px-0">
       <div
         class="row align-items-center justify-content-center py-5 py-lg-0 px-md-5"
       >
@@ -126,7 +134,7 @@
         >
           <div class="p-3">
             <h1 class="text-primary text-center text-lg-start">
-              Hi, I am Anita
+              Hi, I am Jane
             </h1>
             <p class="lead fs-1 text-secondary text-center text-lg-start">
               I am a web designer and developer
@@ -140,7 +148,7 @@
           </div>
           <div class="d-flex flex-column flex-lg-row p-3">
             <a
-              href="#"
+              href="#portfolio"
               type="button"
               class="btn btn-outline-secondary btn-lg me-lg-5 mb-2 mb-lg-0"
             >
@@ -160,7 +168,7 @@
               </svg>
             </a>
             <a
-              href="#"
+              href="#contact"
               type="button"
               class="btn btn-primary rounded-pill btn-lg ms-lg-5 mb-2 mb-lg-0"
             >
@@ -171,9 +179,28 @@
         <div
           class="d-none col-lg-6 d-lg-flex align-items-center justify-content-center"
         >
-          <img src="img/photo.png" alt="" class="img-fluid" />
+          <img
+            src="img/avatar.png"
+            alt=""
+            class="img-fluid rounded-circle"
+            style="width: 50%"
+          />
         </div>
       </div>
+      <img
+        src="img/bg-vector-5.svg"
+        alt=""
+        class="d-none d-lg-block position-absolute"
+        width="250px"
+        style="z-index: -5; top: 10%; left: 5%; opacity: 0.3"
+      />
+      <img
+        src="img/bg-vector-2.svg"
+        alt=""
+        class="d-none d-lg-block position-absolute"
+        width="250px"
+        style="z-index: -5; bottom: 20%; right: 5%"
+      />
       <svg
         id="Layer_1"
         data-name="Layer 1"
@@ -192,26 +219,31 @@
           class="cls-1"
           d="M0,6.8V40H1440V0c-27.85-.22-77.09-.48-138.48,0C1256,.36,1086.33,2,765.15,17.41c-119,5.69-124.23,6.82-177.25,8.14C458.61,28.75,359,25.24,269.7,22,199.25,19.36,107.61,14.92,0,6.8Z"
           transform="translate(0 0.27)"
-        />
+        ></path>
       </svg>
-    </header>
-    <!-- Header end -->
+    </section>
+    <!-- Hero section end -->
 
     <!-- Featured projects start -->
-    <section class="container-fluid section--featured-projects">
+    <section
+      class="container-fluid section--featured-projects position-relative px-0 pt-5 mt-5"
+      id="portfolio"
+    >
       <div class="py-3 px-md-5 d-flex flex-column align-items-center">
         <h2
-          class="text-secondary border-secondary border-bottom d-flex justify-content-center mb-3"
+          class="text-secondary text-uppercase border-secondary border-bottom d-flex justify-content-center mb-3"
         >
           Featured projects
         </h2>
-        <p class="text-center">
+        <p class="text-center fs-4 mb-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptas.
         </p>
         <div>
-          <div class="row m-3 shadow-sm">
-            <div class="col-12 col-lg-6 py-2 d-flex align-items-center">
-              <img src="img/computer.jpeg" alt="" class="img-fluid" />
+          <div class="row m-3 pb-3">
+            <div
+              class="col-12 col-lg-6 py-2 d-flex align-items-center justify-content-center"
+            >
+              <img src="img/computer.jpeg" alt="" class="img-fluid shadow-lg" />
             </div>
             <div
               class="col-12 col-lg-6 py-2 d-flex flex-column justify-content-center"
@@ -229,24 +261,17 @@
                 consectetur adipisicing elit. Dolorum, minima!
               </p>
               <div class="text-center">
-                <button
+                <a
+                  href="#"
                   type="button"
-                  class="btn btn-outline-primary rounded-pill m-2"
+                  class="btn btn-primary rounded-pill m-2"
                 >
-                  View code source
-                </button>
-                <button type="button" class="btn btn-primary rounded-pill m-2">
-                  Visit website
-                </button>
+                  Learn more
+                </a>
               </div>
             </div>
           </div>
-          <div class="row m-3 shadow-sm">
-            <div
-              class="col-12 col-lg-6 order-lg-1 py-2 d-flex align-items-center"
-            >
-              <img src="img/computer.jpeg" alt="" class="img-fluid" />
-            </div>
+          <div class="row m-3 pb-3">
             <div
               class="col-12 col-lg-6 py-2 d-flex flex-column justify-content-center"
             >
@@ -263,76 +288,65 @@
                 consectetur adipisicing elit. Dolorum, minima!
               </p>
               <div class="text-center">
-                <button
+                <a
+                  href="#"
                   type="button"
-                  class="btn btn-outline-primary rounded-pill m-2"
+                  class="btn btn-primary rounded-pill m-2"
                 >
-                  View code source
-                </button>
-                <button type="button" class="btn btn-primary rounded-pill m-2">
-                  Visit website
-                </button>
+                  Learn more
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="row m-3 shadow-sm">
-            <div class="col-12 col-lg-6 py-2 d-flex align-items-center">
-              <img src="img/computer.jpeg" alt="" class="img-fluid" />
             </div>
             <div
-              class="col-12 col-lg-6 py-2 d-flex flex-column justify-content-center"
+              class="col-12 col-lg-6 py-2 d-flex align-items-center justify-content-center"
             >
-              <h3 class="text-secondary text-center text-lg-left">
-                Project title
-              </h3>
-              <div class="text-center mb-2">
-                <span class="badge text-bg-info">UX design</span>
-                <span class="badge text-bg-info">Web development</span>
-              </div>
-              <p class="text-center">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis, reprehenderit. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Dolorum, minima!
-              </p>
-              <div class="text-center">
-                <button
-                  type="button"
-                  class="btn btn-outline-primary rounded-pill m-2"
-                >
-                  View code source
-                </button>
-                <button type="button" class="btn btn-primary rounded-pill m-2">
-                  Visit website
-                </button>
-              </div>
+              <img src="img/computer.jpeg" alt="" class="img-fluid shadow-lg" />
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-outline-secondary btn-lg my-3">
+        <a
+          href="portfolio.html"
+          type="button"
+          class="btn btn-outline-secondary btn-lg my-3"
+        >
           View more of my works
-        </button>
+        </a>
       </div>
+      <img
+        src="img/bg-vector-6.svg"
+        alt=""
+        class="d-none d-lg-block position-absolute"
+        width="50px"
+        style="z-index: -5; top: 0; right: 10%; opacity: 0.3"
+      />
     </section>
     <!-- Featured projects end -->
 
     <!-- Services section start -->
-    <section class="container-fluid section--services">
-      <div class="py-3 px-md-3 d-flex flex-column align-items-center">
+    <section
+      class="container-fluid section--services position-relative px-0 pt-5 mt-5"
+      id="services"
+    >
+      <div class="angled w-100"></div>
+      <div class="py-3 px-md-5 d-flex flex-column align-items-center">
         <h2
-          class="text-secondary border-secondary border-bottom d-flex justify-content-center mb-3"
+          class="text-secondary text-uppercase border-secondary border-bottom d-flex justify-content-center mb-3"
         >
           Services
         </h2>
-        <p class="text-center">
+        <p class="text-center fs-4 mb-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptas.
         </p>
         <div class="row justify-content-center m-3">
-          <div class="card col-12 col-sm-10 col-md-5 col-lg-3 m-2">
-            <div class="card-body text-center">
+          <div
+            class="col-12 col-sm-10 col-md-5 col-lg-3 px-3 py-5 m-3 bg-white shadow rounded"
+            style="z-index: 3"
+          >
+            <div class="text-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                width="75px"
+                width="50px"
                 class="mb-3 text-secondary"
                 stroke="currentColor"
                 fill="currentColor"
@@ -342,22 +356,23 @@
                   d="M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z"
                 ></path>
               </svg>
-              <h3 class="text-primary text-uppercase card-title text-center">
-                UX Design
-              </h3>
-              <p class="card-text text-center">
+              <h3 class="text-primary text-uppercase text-center">UX Design</h3>
+              <p class="text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem excepturi in, mollitia ad esse autem. Lorem ipsum
                 dolor sit amet consectetur adipisicing elit. Saepe, mollitia.
               </p>
             </div>
           </div>
-          <div class="card col-12 col-sm-10 col-md-5 col-lg-3 m-2">
-            <div class="card-body text-center">
+          <div
+            class="col-12 col-sm-10 col-md-5 col-lg-3 px-3 py-5 m-3 bg-white shadow rounded"
+            style="z-index: 3"
+          >
+            <div class="text-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                width="75px"
+                width="50px"
                 class="mb-3 text-secondary"
                 stroke="currentColor"
                 fill="currentColor"
@@ -367,22 +382,23 @@
                   d="M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z"
                 ></path>
               </svg>
-              <h3 class="text-primary text-uppercase card-title text-center">
-                UX Design
-              </h3>
-              <p class="card-text text-center">
+              <h3 class="text-primary text-uppercase text-center">UX Design</h3>
+              <p class="text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem excepturi in, mollitia ad esse autem. Lorem ipsum
                 dolor sit amet consectetur adipisicing elit. Saepe, mollitia.
               </p>
             </div>
           </div>
-          <div class="card col-12 col-sm-10 col-md-5 col-lg-3 m-2">
-            <div class="card-body text-center">
+          <div
+            class="col-12 col-sm-10 col-md-5 col-lg-3 px-3 py-5 m-3 bg-white shadow rounded"
+            style="z-index: 3"
+          >
+            <div class="text-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                width="75px"
+                width="50px"
                 class="mb-3 text-secondary"
                 stroke="currentColor"
                 fill="currentColor"
@@ -392,10 +408,8 @@
                   d="M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z"
                 ></path>
               </svg>
-              <h3 class="text-primary text-uppercase card-title text-center">
-                UX Design
-              </h3>
-              <p class="card-text text-center">
+              <h3 class="text-primary text-uppercase text-center">UX Design</h3>
+              <p class="text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem excepturi in, mollitia ad esse autem. Lorem ipsum
                 dolor sit amet consectetur adipisicing elit. Saepe, mollitia.
@@ -403,86 +417,115 @@
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-primary btn-lg rounded-pill my-3">
+        <a
+          href="#contact"
+          type="button"
+          class="btn btn-primary btn-lg rounded-pill my-3"
+        >
           Get free quote
-        </button>
+        </a>
       </div>
+      <img
+        src="img/bg-vector-2.svg"
+        alt=""
+        class="d-none d-lg-block position-absolute"
+        width="250px"
+        style="z-index: 0; top: 50%; right: 50%; opacity: 0.1"
+      />
+      <img
+        src="img/bg-vector-3.svg"
+        alt=""
+        class="d-none d-lg-block position-absolute"
+        width="250px"
+        style="z-index: 0; top: 25%; left: 10%; opacity: 0.1"
+      />
+      <img
+        src="img/bg-vector-7.svg"
+        alt=""
+        class="d-none d-lg-block position-absolute"
+        width="100px"
+        style="z-index: 0; bottom: 5%; right: 5%; opacity: 0.3"
+      />
     </section>
     <!-- Services section end -->
 
     <!-- Technologies section start -->
-    <section class="container-fluid section--services">
-      <div class="py-3 px-md-3 d-flex flex-column align-items-center">
+    <section
+      class="container-fluid section--technologies position-relative px-0 pt-5 mt-5"
+    >
+      <div class="py-3 px-md-5 d-flex flex-column align-items-center">
         <h2
-          class="text-secondary border-secondary border-bottom d-flex justify-content-center mb-3"
+          class="text-secondary text-uppercase border-secondary border-bottom d-flex justify-content-center mb-3"
         >
           Technologies and tools
         </h2>
-        <p class="text-center">
+        <p class="text-center fs-4 mb-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptas.
         </p>
-        <p class="text-primary fw-bold">My niche technology is PHP/ Laravel</p>
-        <div class="row justify-content-center m-3">
+        <div class="row justify-content-center p-3 bg-light">
+          <p class="text-primary text-center fw-bold fs-4">
+            My niche technology is PHP/ Laravel
+          </p>
           <div class="col-10 row justify-content-center">
             <img
               src="img/computer.jpeg"
               alt=""
-              class="col-5 col-sm-3 col-md-2 mb-2"
+              class="col-5 col-sm-3 col-md-2 mb-2 rounded-circle"
             />
             <img
               src="img/computer.jpeg"
               alt=""
-              class="col-5 col-sm-3 col-md-2 mb-2"
+              class="col-5 col-sm-3 col-md-2 mb-2 rounded-circle"
             />
             <img
               src="img/computer.jpeg"
               alt=""
-              class="col-5 col-sm-3 col-md-2 mb-2"
+              class="col-5 col-sm-3 col-md-2 mb-2 rounded-circle"
             />
             <img
               src="img/computer.jpeg"
               alt=""
-              class="col-5 col-sm-3 col-md-2 mb-2"
+              class="col-5 col-sm-3 col-md-2 mb-2 rounded-circle"
             />
             <img
               src="img/computer.jpeg"
               alt=""
-              class="col-5 col-sm-3 col-md-2 mb-2"
+              class="col-5 col-sm-3 col-md-2 mb-2 rounded-circle"
             />
             <img
               src="img/computer.jpeg"
               alt=""
-              class="col-5 col-sm-3 col-md-2 mb-2"
+              class="col-5 col-sm-3 col-md-2 mb-2 rounded-circle"
             />
             <img
               src="img/computer.jpeg"
               alt=""
-              class="col-5 col-sm-3 col-md-2 mb-2"
+              class="col-5 col-sm-3 col-md-2 mb-2 rounded-circle"
             />
             <img
               src="img/computer.jpeg"
               alt=""
-              class="col-5 col-sm-3 col-md-2 mb-2"
+              class="col-5 col-sm-3 col-md-2 mb-2 rounded-circle"
             />
             <img
               src="img/computer.jpeg"
               alt=""
-              class="col-5 col-sm-3 col-md-2 mb-2"
+              class="col-5 col-sm-3 col-md-2 mb-2 rounded-circle"
             />
             <img
               src="img/computer.jpeg"
               alt=""
-              class="col-5 col-sm-3 col-md-2 mb-2"
+              class="col-5 col-sm-3 col-md-2 mb-2 rounded-circle"
             />
             <img
               src="img/computer.jpeg"
               alt=""
-              class="col-5 col-sm-3 col-md-2 mb-2"
+              class="col-5 col-sm-3 col-md-2 mb-2 rounded-circle"
             />
             <img
               src="img/computer.jpeg"
               alt=""
-              class="col-5 col-sm-3 col-md-2 mb-2"
+              class="col-5 col-sm-3 col-md-2 mb-2 rounded-circle"
             />
           </div>
         </div>
@@ -491,37 +534,42 @@
     <!-- Technologies section end -->
 
     <!-- Contact start -->
-    <section class="container-fluid section--services">
-      <div class="py-3 px-md-3 d-flex flex-column align-items-center">
+    <section
+      class="container-fluid section--contact position-relative px-0 pt-5 mt-5 bg-light"
+      id="contact"
+    >
+      <div class="py-3 px-md-5 d-flex flex-column align-items-center">
         <h2
-          class="text-secondary border-secondary border-bottom text-center mb-3"
+          class="text-secondary text-center text-uppercase border-secondary border-bottom d-flex justify-content-center mb-3"
         >
           Interested in working with me?
         </h2>
-        <p class="text-center">
+        <p class="text-center fs-4 mb-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptas.
         </p>
         <div class="row justify-content-center m-3">
-          <div class="card py-3 col-12 col-lg-5 m-3 m-md-2">
+          <div
+            class="py-3 col-12 col-lg-6 me-lg-3 bg-white rounded shadow-sm my-3"
+          >
             <form>
               <div class="row">
-                <div class="mb-3 col-12 col-md-6">
+                <div class="mb-3 col-12 col-md-5">
                   <label for="sender_name" class="form-label">Name</label>
                   <input type="text" class="form-control" id="sender_name" />
                 </div>
 
-                <div class="mb-3 col-12 col-md-6">
+                <div class="mb-3 col-12 col-md-7">
                   <label for="email" class="form-label">Email address</label>
                   <input type="email" class="form-control" id="email" />
                 </div>
               </div>
               <div class="row">
-                <div class="mb-3 col-12 col-md-6">
+                <div class="mb-3 col-12 col-md-5">
                   <label for="subject" class="form-label">Subject</label>
                   <input type="text" class="form-control" id="subject" />
                 </div>
 
-                <div class="mb-3 col-12 col-md-6">
+                <div class="mb-3 col-12 col-md-7">
                   <label for="file" class="form-label"
                     >Insert a file if needed</label
                   >
@@ -535,70 +583,64 @@
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </div>
-          <div class="col-12 col-lg-5">
-            <div class="card py-3 m-3 m-md-2">
-              <div class="shadow-sm m-2 rounded d-flex">
-                <img src="img/avatar.png" alt="" class="w-25 h-25 me-2" />
-                <div class="ms-2 d-flex flex-column justify-content-center">
-                  <h3 class="text-secondary">Anita Razafindrakotovao</h3>
-                  <a
-                    href="mailto:info@anitarazafi.com"
-                    class="text-decoration-none"
-                    >info@anitarazafi.com</a
+          <div
+            class="py-3 col-12 col-lg-4 ms-lg-3 bg-white rounded shadow-sm my-3 d-flex flex-column align-items-center justify-content-center"
+          >
+            <img src="img/my-photo.jpg" alt="" class="w-25 me-2" />
+            <h3 class="text-secondary text-center px-3">Jane Doe</h3>
+            <a
+              href="mailto:info@anitarazafi.com"
+              class="text-decoration-none px-3"
+              >info@janedoe.com</a
+            >
+            <div class="ms-2 d-flex flex-column justify-content-center">
+              <div class="p-2">
+                <a href="#" class="text-decoration-none px-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"
+                    width="20px"
+                    heigth="20px"
                   >
-                  <div class="p-2">
-                    <a href="#" class="text-decoration-none px-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 496 512"
-                        width="20px"
-                        heigth="20px"
-                      >
-                        <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                        <path
-                          d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                        ></path>
-                      </svg>
-                    </a>
-                    <a href="#" class="text-decoration-none px-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512"
-                        width="20px"
-                        heigth="20px"
-                      >
-                        <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                        <path
-                          d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                        ></path>
-                      </svg>
-                    </a>
-                    <a href="#" class="text-decoration-none px-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                        width="20px"
-                        heigth="20px"
-                      >
-                        <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                        <path
-                          d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"
-                        ></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="p-3">
-                <h3>About me</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Autem consectetur a, sed odit quod deleniti cum voluptatem
-                  distinctio laboriosam dolore, rem necessitatibus. Ipsam, esse
-                  iusto.
-                </p>
+                    <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="#" class="text-decoration-none px-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    width="20px"
+                    heigth="20px"
+                  >
+                    <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="#" class="text-decoration-none px-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    width="20px"
+                    heigth="20px"
+                  >
+                    <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"
+                    ></path>
+                  </svg>
+                </a>
               </div>
             </div>
+            <p class="px-3 text-center">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
+              consectetur a, sed odit quod deleniti cum voluptatem distinctio
+              laboriosam dolore, rem necessitatibus. Ipsam, esse iusto.
+            </p>
           </div>
         </div>
       </div>
@@ -606,95 +648,96 @@
     <!-- Contact end -->
 
     <!-- Blog start -->
-    <section class="container-fluid section--services">
-      <div class="py-3 px-md-3 d-flex flex-column align-items-center">
+    <section
+      class="container-fluid section--blog position-relative px-0 pt-5 m-5"
+      id="blog"
+    >
+      <div class="py-3 px-md-5 d-flex flex-column align-items-center">
         <h2
-          class="text-secondary border-secondary border-bottom text-center mb-3"
+          class="text-secondary text-center text-uppercase border-secondary border-bottom d-flex justify-content-center mb-3"
         >
           Blog
         </h2>
-        <p class="text-center">
+        <p class="text-center fs-4 mb-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptas.
         </p>
         <div class="row justify-content-center m-3">
-          <div class="col-12 col-md-6 col-lg-4 card py-2">
-            <img src="img/computer.jpeg" alt="" class="card-img-top" />
+          <div
+            class="col-12 col-md-5 col-lg-3 card py-2 border-0 shadow-sm m-2"
+          >
+            <img src="img/computer.jpeg" alt="" class="card-img-top h-50" />
             <div class="card-body">
-              <h3 class="card-title">Post number 1</h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-                quaerat repellendus odit corporis quasi sunt.
-              </p>
+              <a href="single-post.html" class="text-decoration-none mb-3">
+                <h3 class="card-title">Post number 1</h3>
+                <p class="card-text text-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                  quaerat repellendus odit corporis quasi sunt.
+                </p>
+              </a>
               <p>
                 <span class="small text-muted">22.02.2022</span> in
-                <span class="badge text-bg-primary">UX design</span>
+                <a href="blog.html">
+                  <span class="badge text-bg-primary">Category 1</span>
+                </a>
               </p>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 card py-2">
-            <img src="img/computer.jpeg" alt="" class="card-img-top" />
+          <div
+            class="col-12 col-md-5 col-lg-3 card py-2 border-0 shadow-sm m-2"
+          >
+            <img src="img/computer.jpeg" alt="" class="card-img-top h-50" />
             <div class="card-body">
-              <h3 class="card-title">Post number 1</h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-                quaerat repellendus odit corporis quasi sunt.
-              </p>
+              <a href="single-post.html" class="text-decoration-none mb-3">
+                <h3 class="card-title">Post number 2</h3>
+                <p class="card-text text-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                  quaerat repellendus odit corporis quasi sunt.
+                </p>
+              </a>
               <p>
                 <span class="small text-muted">22.02.2022</span> in
-                <span class="badge text-bg-primary">UX design</span>
+                <a href="blog.html">
+                  <span class="badge text-bg-primary">Category 2</span>
+                </a>
               </p>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 card py-2">
-            <img src="img/computer.jpeg" alt="" class="card-img-top" />
+          <div
+            class="col-12 col-md-5 col-lg-3 card py-2 border-0 shadow-sm m-2"
+          >
+            <img src="img/computer.jpeg" alt="" class="card-img-top h-50" />
             <div class="card-body">
-              <h3 class="card-title">Post number 1</h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-                quaerat repellendus odit corporis quasi sunt.
-              </p>
+              <a href="single-post.html" class="text-decoration-none mb-3">
+                <h3 class="card-title">Post number 3</h3>
+                <p class="card-text text-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                  quaerat repellendus odit corporis quasi sunt.
+                </p>
+              </a>
               <p>
                 <span class="small text-muted">22.02.2022</span> in
-                <span class="badge text-bg-primary">UX design</span>
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 card py-2">
-            <img src="img/computer.jpeg" alt="" class="card-img-top" />
-            <div class="card-body">
-              <h3 class="card-title">Post number 1</h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-                quaerat repellendus odit corporis quasi sunt.
-              </p>
-              <p>
-                <span class="small text-muted">22.02.2022</span> in
-                <span class="badge text-bg-primary">UX design</span>
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 card py-2">
-            <img src="img/computer.jpeg" alt="" class="card-img-top" />
-            <div class="card-body">
-              <h3 class="card-title">Post number 1</h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-                quaerat repellendus odit corporis quasi sunt.
-              </p>
-              <p>
-                <span class="small text-muted">22.02.2022</span> in
-                <span class="badge text-bg-primary">UX design</span>
+                <a href="blog.html">
+                  <span class="badge text-bg-primary">Category 3</span>
+                </a>
               </p>
             </div>
           </div>
         </div>
-        <button
+        <a
+          href="blog.html"
           type="button"
           class="btn btn-outline-secondary btn-lg rounded-pill"
         >
           See all posts
-        </button>
+        </a>
       </div>
+      <img
+        src="img/bg-vector-8.svg"
+        alt=""
+        class="d-none d-lg-block position-absolute"
+        width="100px"
+        style="z-index: 0; top: 5%; left: 5%; opacity: 0.3"
+      />
     </section>
     <!-- Blog end -->
 

@@ -26,6 +26,7 @@ $position-values: (
     -5: -5%,
 );
 
+@import "normalize.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 .section--hero {
@@ -33,6 +34,18 @@ $position-values: (
 
     &>div {
         min-height: calc(100vh - 90px);
+    }
+}
+
+.section--services {
+    background-color: #f3f3f3;
+
+    .angled {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+        background-color: #fff;
+        height: 75px;
+        position: absolute;
+        top: -1px;
     }
 }
 

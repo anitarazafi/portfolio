@@ -27,7 +27,7 @@ $position-values: (
 );
 
 @import "normalize.scss";
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 .section--hero {
     background: linear-gradient(293.5deg, rgba(163, 156, 230, 0.5) 19.35%, rgba(255, 255, 255, 0) 102.26%);

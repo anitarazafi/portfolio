@@ -29,6 +29,51 @@ $position-values: (
 @import "normalize.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+
+.navbar-toggler {
+    position: relative;
+    border: none;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    .bar {
+        background-color: #212529;
+        height: 2px;
+        width: 25px;
+        position: absolute;
+        left: 0;
+        transition: transform 0.6s linear;
+
+        &.bar-1 {
+            top: 0;
+        }
+
+        &.bar-2 {
+            top: 6px;
+        }
+
+        &.bar-3 {
+            top: 12px;
+        }
+    }
+
+    &[aria-expanded="true"] {
+        & .bar-1 {
+            transform: rotate(-765deg) translateY(8.5px);
+        }
+
+        & .bar-2 {
+            display: none;
+        }
+
+        & .bar-3 {
+            transform: rotate(765deg) translateY(-8.5px);
+        }
+    }
+}
+
 .section--hero {
     background: linear-gradient(293.5deg, rgba(163, 156, 230, 0.5) 19.35%, rgba(255, 255, 255, 0) 102.26%);
 

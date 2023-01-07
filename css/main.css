@@ -11224,6 +11224,40 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.navbar-toggler {
+  position: relative;
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler .bar {
+  background-color: #212529;
+  height: 2px;
+  width: 25px;
+  position: absolute;
+  left: 0;
+  transition: transform 0.6s linear;
+}
+.navbar-toggler .bar.bar-1 {
+  top: 0;
+}
+.navbar-toggler .bar.bar-2 {
+  top: 6px;
+}
+.navbar-toggler .bar.bar-3 {
+  top: 12px;
+}
+.navbar-toggler[aria-expanded=true] .bar-1 {
+  transform: rotate(-765deg) translateY(8.5px);
+}
+.navbar-toggler[aria-expanded=true] .bar-2 {
+  display: none;
+}
+.navbar-toggler[aria-expanded=true] .bar-3 {
+  transform: rotate(765deg) translateY(-8.5px);
+}
+
 .section--hero {
   background: linear-gradient(293.5deg, rgba(163, 156, 230, 0.5) 19.35%, rgba(255, 255, 255, 0) 102.26%);
 }

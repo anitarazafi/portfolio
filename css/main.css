@@ -11311,10 +11311,10 @@ textarea.form-control-lg {
   height: 100%;
 }
 
-.section--services {
+#services {
   background-color: #f3f3f3;
 }
-.section--services .angled {
+#services .angled {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
   background-color: #fff;
   height: 75px;

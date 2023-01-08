@@ -74,11 +74,21 @@ $position-values: (
     }
 }
 
-.section--hero {
+.nav-link:hover,
+.nav-link:focus {
+    color: $primary;
+}
+
+.navbar-nav .show>.nav-link,
+.navbar-nav .nav-link.active {
+    color: $primary;
+}
+
+#hero-section {
     background: linear-gradient(293.5deg, rgba(163, 156, 230, 0.5) 19.35%, rgba(255, 255, 255, 0) 102.26%);
 
     &>div {
-        min-height: calc(100vh - 90px);
+        min-height: calc(100vh - 75px);
     }
 }
 

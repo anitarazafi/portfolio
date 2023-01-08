@@ -11258,11 +11258,21 @@ textarea.form-control-lg {
   transform: rotate(765deg) translateY(-8.5px);
 }
 
-.section--hero {
+.nav-link:hover,
+.nav-link:focus {
+  color: #5349B1;
+}
+
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.active {
+  color: #5349B1;
+}
+
+#hero-section {
   background: linear-gradient(293.5deg, rgba(163, 156, 230, 0.5) 19.35%, rgba(255, 255, 255, 0) 102.26%);
 }
-.section--hero > div {
-  min-height: calc(100vh - 90px);
+#hero-section > div {
+  min-height: calc(100vh - 75px);
 }
 
 .section--services {

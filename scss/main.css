@@ -12990,6 +12990,16 @@ fieldset:disabled .btn {
   }
 }
 
+#header {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#header nav {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .navbar-toggler {
   position: relative;
   border: none;

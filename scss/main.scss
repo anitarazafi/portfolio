@@ -29,6 +29,13 @@ $position-values: (
 @import "normalize.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+#header {
+    transition: all 0.3s ease-in-out;
+
+    nav {
+        transition: all 0.3s ease-in-out;
+    }
+}
 
 .navbar-toggler {
     position: relative;

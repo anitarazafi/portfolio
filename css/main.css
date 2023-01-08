@@ -11224,6 +11224,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+#header {
+  transition: all 0.3s ease-in-out;
+}
+#header nav {
+  transition: all 0.3s ease-in-out;
+}
+
 .navbar-toggler {
   position: relative;
   border: none;

@@ -11321,6 +11321,39 @@ textarea.form-control-lg {
   position: absolute;
   top: -1px;
 }
+#services .service-item {
+  transition: all 0.3s ease-in-out;
+}
+#services .service-item:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transform: scale(1.05);
+}
+
+#technologies img {
+  transition: all 0.4s ease-in-out;
+}
+#technologies img:hover {
+  transform: scale(0.9);
+}
+
+#contact {
+  background-color: #f3f3f3;
+}
+#contact .contact-left,
+#contact .contact-right {
+  transition: all 0.4s ease-in-out;
+}
+#contact .contact-left:hover,
+#contact .contact-right:hover {
+  transform: scale(0.95);
+}
+
+#blog .blog-card {
+  transition: all 0.4s ease-in-out;
+}
+#blog .blog-card:hover {
+  transform: scale(1.05);
+}
 
 .footer {
   background-color: #3A337C;

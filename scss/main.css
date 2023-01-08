@@ -13118,6 +13118,54 @@ fieldset:disabled .btn {
   top: -1px;
 }
 
+#services .service-item {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#services .service-item:hover {
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#technologies img {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+#technologies img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#contact {
+  background-color: #f3f3f3;
+}
+
+#contact .contact-left,
+#contact .contact-right {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+#contact .contact-left:hover,
+#contact .contact-right:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+#blog .blog-card {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+#blog .blog-card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .footer {
   background-color: #3A337C;
 }

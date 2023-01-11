@@ -13169,4 +13169,8 @@ fieldset:disabled .btn {
 .footer {
   background-color: #3A337C;
 }
+
+section#about > div {
+  min-height: 100vh;
+}
 /*# sourceMappingURL=main.css.map */

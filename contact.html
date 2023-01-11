@@ -4,16 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My portfolio</title>
+    <meta
+      name="description"
+      content="A clean and minimalist portfolio website with bootstrap."
+    />
+    <meta name="author" content="Anita Razafindrakotovao" />
+
+    <title>Contact</title>
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon-bg.png" />
 
+    <!-- Animate on scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Stylesheet  -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
     <!-- Navbar start -->
-    <header class="container-fluid sticky-top bg-white shadow-sm">
+    <header
+      class="container-fluid shadow-sm bg-white sticky-top"
+      id="header"
+      style="--bs-bg-opacity: 0.98"
+    >
       <div class="container">
-        <nav class="navbar navbar-expand-lg bg-white">
+        <nav
+          class="navbar navbar-expand-lg bg-white"
+          style="--bs-bg-opacity: 0.98"
+        >
           <div class="container-fluid">
             <a class="navbar-brand text-primary fw-bold fs-3" href="index.html">
               <!-- <img src="img/logo.png" alt="logo" height="70px" /> -->
@@ -28,10 +46,12 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <div class="bar bar-1"></div>
+              <div class="bar bar-2"></div>
+              <div class="bar bar-3"></div>
             </button>
             <div
-              class="collapse navbar-collapse d-lg-flex justify-content-end"
+              class="collapse navbar-collapse py-lg-2 d-lg-flex justify-content-end"
               id="navbarSupportedContent"
             >
               <ul
@@ -53,7 +73,7 @@
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="index.html#services"
+                    href="#services"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -62,19 +82,13 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="index.html#services"
-                        >Service 1</a
-                      >
+                      <a class="dropdown-item" href="services.html">Service 1</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="index.html#services"
-                        >Service 2</a
-                      >
+                      <a class="dropdown-item" href="services.html">Service 2</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="index.html#services"
-                        >Service 3</a
-                      >
+                      <a class="dropdown-item" href="services.html">Service 3</a>
                     </li>
                   </ul>
                 </li>
@@ -107,13 +121,13 @@
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">
                     <button type="button" class="btn btn-primary rounded-pill">
-                      Hire me
+                      Let's talk
                     </button>
                   </a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="storage/cv.pdf" target="_blank">
                     <button type="button" class="btn btn-outline-secondary">
                       My complete CV
                     </button>
@@ -128,38 +142,34 @@
     <!-- Navbar end -->
 
     <!-- Wrapper start -->
-    <main class="container-fluid py-5 bg-light">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="py-3 px-md-5 d-flex flex-column align-items-center">
+    <main>
+      <section class="container-fluid position-relative" id="contact">
+        <div class="container py-5">
+          <div class="mb-5">
             <h2
-              class="text-secondary text-center text-uppercase border-secondary border-bottom d-flex justify-content-center mb-3"
+              class="fs-1 text-secondary text-uppercase text-decoration-underline text-center"
             >
-              Interested in working with me?
+              Contact
             </h2>
-            <p class="text-center fs-4 mb-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-              voluptas.
+            <p class="fs-4 text-center">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione,
+              odio
             </p>
-            <div class="row justify-content-center m-3">
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-12 row justify-content-lg-between">
               <div
-                class="py-3 col-12 col-lg-6 me-lg-3 bg-white rounded shadow-sm my-3"
+                class="contact-left col-12 col-lg-6 bg-white p-3 rounded shadow-sm mb-3"
               >
                 <form>
                   <div class="row">
                     <div class="mb-3 col-12 col-md-5">
                       <label for="sender_name" class="form-label">Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="sender_name"
-                      />
+                      <input type="text" class="form-control" id="sender_name" />
                     </div>
-
+  
                     <div class="mb-3 col-12 col-md-7">
-                      <label for="email" class="form-label"
-                        >Email address</label
-                      >
+                      <label for="email" class="form-label">Email address</label>
                       <input type="email" class="form-control" id="email" />
                     </div>
                   </div>
@@ -168,7 +178,7 @@
                       <label for="subject" class="form-label">Subject</label>
                       <input type="text" class="form-control" id="subject" />
                     </div>
-
+  
                     <div class="mb-3 col-12 col-md-7">
                       <label for="file" class="form-label"
                         >Insert a file if needed</label
@@ -188,9 +198,9 @@
                 </form>
               </div>
               <div
-                class="py-3 col-12 col-lg-4 ms-lg-3 bg-white rounded shadow-sm my-3 d-flex flex-column align-items-center justify-content-center"
+                class="contact-right col-12 col-lg-5 bg-white p-3 rounded shadow-sm mb-3 d-flex flex-column align-items-center justify-content-center"
               >
-                <img src="img/my-photo.jpg" alt="" class="w-25 me-2" />
+                <img src="img/avatar.png" alt="" class="w-25 me-2" />
                 <h3 class="text-secondary text-center px-3">Jane Doe</h3>
                 <a
                   href="mailto:info@anitarazafi.com"
@@ -241,27 +251,35 @@
                   </div>
                 </div>
                 <p class="px-3 text-center">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Autem consectetur a, sed odit quod deleniti cum voluptatem
-                  distinctio laboriosam dolore, rem necessitatibus. Ipsam, esse
-                  iusto.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
+                  consectetur a, sed odit quod deleniti cum voluptatem distinctio
+                  laboriosam dolore, rem necessitatibus. Ipsam, esse iusto.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <!-- Wrapper end -->
 
     <!-- Footer start -->
-    <footer class="footer py-2">
+    <footer class="footer fixed-bottom py-2">
       <p class="text-center text-white m-0">
         Copyright 2023 © Anita RAZAFI. All rights reserved.
       </p>
     </footer>
     <!-- Footer end -->
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>

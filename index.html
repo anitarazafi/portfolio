@@ -20,6 +20,12 @@
 
     <!-- Stylesheet  -->
     <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Swipersjs -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Navbar start -->
@@ -689,35 +695,67 @@
             My niche technology is PHP/Laravel
           </p>
         </div>
-        <div
-          class="row justify-content-center"
-          data-aos="fade-in"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-        >
-          <div class="col-10 row justify-content-center">
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-              <img src="img/computer.jpeg" alt="" class="img-fluid" />
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-              <img src="img/computer.jpeg" alt="" class="img-fluid" />
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-              <img src="img/computer.jpeg" alt="" class="img-fluid" />
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-              <img src="img/computer.jpeg" alt="" class="img-fluid" />
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-              <img src="img/computer.jpeg" alt="" class="img-fluid" />
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-              <img src="img/computer.jpeg" alt="" class="img-fluid" />
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-              <img src="img/computer.jpeg" alt="" class="img-fluid" />
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <!-- Slider main container -->
+            <div class="swiper technologies">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="img/computer.jpeg" alt="" class="img-fluid" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/computer.jpeg" alt="" class="img-fluid" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/computer.jpeg" alt="" class="img-fluid" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/computer.jpeg" alt="" class="img-fluid" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/computer.jpeg" alt="" class="img-fluid" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/computer.jpeg" alt="" class="img-fluid" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/computer.jpeg" alt="" class="img-fluid" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/computer.jpeg" alt="" class="img-fluid" />
+                </div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
+          <!-- <div class="col-10 row justify-content-center">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+              <img src="img/computer.jpeg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+              <img src="img/computer.jpeg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+              <img src="img/computer.jpeg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+              <img src="img/computer.jpeg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+              <img src="img/computer.jpeg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+              <img src="img/computer.jpeg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+              <img src="img/computer.jpeg" alt="" class="img-fluid" />
+            </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -991,11 +1029,15 @@
     </footer>
     <!-- Footer end -->
 
+    <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <!-- Swiperjs -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
